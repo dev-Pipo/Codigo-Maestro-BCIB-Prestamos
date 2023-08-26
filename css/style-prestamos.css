@@ -41,7 +41,13 @@
     text-transform: uppercase;
     color: #fff;
     width: max-content;
+    font-weight:650;
 }
+
+.calcular:hover{
+    background-color: #B32011 ;
+}
+
 
 .wraper header{
     width: 100%;

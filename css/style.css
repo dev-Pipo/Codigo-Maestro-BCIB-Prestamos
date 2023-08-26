@@ -482,6 +482,75 @@ footer {
 }
 
 
+/* ESTILO BOX INICIO SESION */
+.contenedor1{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-formulario{
+    padding-top: 13%;
+}
+
+.formulario{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    height: 350px;
+    width: 400px;
+    box-shadow: 0 5px 10px rgba(224,62,62, 0.4);
+}
+
+form .title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    padding-top: 5%;
+}
+
+form label .fa-solid{
+    color:#E03E3E;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10%;
+}
+
+form label input{
+    outline: none;
+    border: none;
+    color: #252525;
+    font-size: 18px;
+    border-bottom: solid 2px #E03E3E;
+}
+
+form label input::placeholder{
+    color: #E03E3E;
+}
+
+#button-login1{
+    color: #fff;
+    border: none;
+    background: #E03E3E;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form .link{
+    color: #E03E3E;
+
+}
+
+
+
+
+
+
 /* FOOTER ESTILO */
 .container-footer {
     display: grid;

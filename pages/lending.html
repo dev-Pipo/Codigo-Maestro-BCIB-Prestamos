@@ -15,6 +15,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-prestamos.css">
 
   <title>BCIB Argentina - Codigo Maestro</title>
   <meta name="description" content="Banco Nacional ItBa de Argentina, menu inicial">
@@ -59,11 +60,72 @@
 
   </header>
 
-  <main>
-    
+
+  <main class="main--prestmos">
+
+    <div class="wraper">
+
+        <header>
+            <h1> Bienvenido al area de pretamos</h1>
+        </header>
+
+        <section class="input-item">    
+            <div>
+                <label for="amount" class="input--amount_label">ingrese su monto</label>
+                <input class="amount" type="number" name="amount" value="">
+            </div>
+            <div>
+                <label for="month" class="input--amount_label">cantidad de meses</label>
+                <input class="month" type="number" name="month" value="">
+            </div>
+
+            <button class="calcular"> calcular</button>
+        </section>
+
+        <section class="results">
+          <div class="result--container">
+            <p class="amount-result"> Monto a devolver : </p>
+            <p class="month-tax"> Cuota mensual: </p>
+            <p class="tax"> Interes: </p>
+          </div>
+         </section>
+
+         <section class="valueTaxes">
+          <table class="taxTable">
+            <tr class="tableTitle">
+              <td>meses:</td>
+              <td>intereses por mes:</td>
+            </tr>
+
+            <tr>
+              <td>1-3</td>
+              <td>2.5%</td>
+            </tr>
+
+            <tr>
+              <td>4-5</td>
+              <td>5%</td>
+            </tr>
+
+            <tr>
+              <td>6-9</td>
+              <td>7.5%</td>
+            </tr>
+
+            <tr>
+              <td>10-14</td>
+              <td>7.5%</td>
+            </tr>
+
+
+          </table>
+      </section>
+    </div>
 
     
+
   </main>
+
 
   <footer>
     <div class="container-footer">

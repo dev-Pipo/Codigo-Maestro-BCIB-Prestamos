@@ -4,7 +4,7 @@ const cacl = document.querySelector(".calcular")
 
 function calcularPorcentaje (a, b){
     let interes;
-        if(a <= 3)i = 0.025; // 2.5%
+        if(a <= 3)interes = 0.025; // 2.5%
         else if(a > 3 && a < 6) interes = 0.05; // 5% 
         else if(a >= 6 && a < 10) interes = 0.075 // 7.5% 
         else if (a >= 10 && a < 14) interes = 0.1 // 10%

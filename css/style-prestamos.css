@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
 
+:root{
+    --negro: #00100B;
+    --rojo:  #C42021;
+    --gris:  #7C8483;
+    --blanco:#F0F3F5;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Open Sans', sans-serif;
+}
 .main--prestmos{
     display: flex;
     width: 100%;
@@ -102,6 +112,7 @@
     background-color: var(--rojo);
     padding: 25px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .taxTable td{

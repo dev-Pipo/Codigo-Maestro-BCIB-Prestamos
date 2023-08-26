@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../css/profile.css">
 
 
   <title>BCIB Argentina - Codigo Maestro</title>
@@ -62,7 +62,41 @@
   </header>
 
   <main>
-    
+    <div class="userName">
+      <h1 class="h1UserProfile">Perfil de la cuenta: </h1>
+      <h2 class="pName">Pedro</h2>
+    </div>
+
+    <div class="container-creditCard">
+      <div class="credit-card">
+        <img class="imgCreditCard" src="../images/credit-card/credit-card-visa.png" alt="">
+      </div>
+      <div class="dates">
+        <div class="datesUser">
+          <p class="pDatos">Saldo</p>
+          <h2 class="h2Datos">$400</h2><br>
+          <p class="pDatos">Name:</p>
+          <h2 class="h2Datos">PEDRO</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-converter">
+      <section id="background">
+        <input type="number" id="pesos" placeholder="Cantidad en pesos">
+        <section id="ops">
+          <select id="moneda">
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="real">Real</option>
+          </select>
+          <button onclick="convertirMoneda()" id="btn">Convertir</button>
+        </section>
+        <label for="resultado">El cambio final es de:</label>
+        <textarea placeholder="$$$" id="resultado" rows="1" cols="20" rea></textarea>
+      </section>
+    </div>
+
   </main>
 
   <footer>
@@ -100,6 +134,7 @@
 
 
   <script src="../script/main.js" type="text/javascript"></script>
+  <script src="../script/convertermoney.js" type="text/javascript"></script>
 </body>
 
 </html>

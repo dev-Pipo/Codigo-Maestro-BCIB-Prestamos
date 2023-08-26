@@ -1,0 +1,120 @@
+
+main{
+    height: 110vh;
+}
+.userName {
+    display: flex;
+}
+
+.h1UserProfile {
+    text-align: center;
+    padding: 40px;
+}
+
+.pName {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+.container-creditCard{
+    display: grid;
+}
+
+.credit-card {
+    border-radius: 14px;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.imgCreditCard {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 2px 10px 40px black;
+}
+
+
+.dates {
+    background: #7C8483;
+    border-radius: 4px;
+    padding: 5%;
+    padding-top: 200px;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: -180px;
+    z-index: -999;
+    position: relative;
+}
+
+.datesUser{
+    display: flex;
+}
+
+.pDatos{
+    padding: 30px 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.h2Datos{
+    padding: 20px 0px;
+    font-size: 40px;
+}
+
+.container-converter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#background{
+    display: flex;
+    padding: 20px;
+    border-radius: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #7C8483;
+}
+
+#moneda{
+    font-size: 15px;
+    width: fit-content;
+    align-content: center;
+}
+
+#pesos{
+    width:fit-content;
+}
+
+#ops{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+#btn{
+    width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#resultado{
+    border-bottom: solid 1px black;
+    width: fit-content;
+    height: 20px;
+    resize: none;
+    align-self: center;
+    margin-top: -15px;
+}
+
+
+

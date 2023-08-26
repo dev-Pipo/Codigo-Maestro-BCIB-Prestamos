@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
 
-h1{
+h1,h3{
+    font-family: var(--title);
+    font-size: 45px;
+}
+
+header{
+
+    width: 100%;
     text-align: center;
 }
 
@@ -20,15 +27,22 @@ body{
     justify-content: center;
 }
 
-#transfer{
+#main-container{
     display: flex;
     flex-direction: column;
     background-color: var(--gris);
-    width: fit-content;
+    width: 80%;
     height: fit-content;
     padding: 20px;
-    border-radius: 10px;
+    margin-top: -2%;
+    border-radius: 30px;
     align-content: center;
+}
+
+.box-title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    width: 100vh;
 }
 
 main{
@@ -36,5 +50,29 @@ main{
     flex-direction: column;
     align-items: center;
     height:100vh;
-    gap: 70px;
+    gap: 50px;
+}
+
+.input-form{
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.acc-btn{
+    align-self: flex-end;
+}
+
+.transfer-amount,#transfer-destiny,
+#pay-destiny{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#trf-btn,#pay-btn{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1.5px var(--negro);
+    cursor: pointer;
 }

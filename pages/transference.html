@@ -60,45 +60,51 @@
   </header>
 
   <main>
-    <h1>Transferencias y pagos</h1>
+    <header><h1>Transferencias y pagos</h1></header>
+    
+    <div id="tsaldo">
+      <p>Saldo: $<span id="tsaldo">10000</span></p>
+    </div>
 
-    <section id="transfer">
+    <section id="main-container">
 
-      <h3>Transferencia</h3>
+      <h3 class="box-title">Transferencia</h3>
 
-      <div id="destiny-form">
+      <div class="input-form">
           <label for="nombre">Destinatario:</label>
           <input type="text" id="transfer-destiny" placeholder="Ingresa CBU o Alias">
       </div>
       
-      <div id="amount-form">
+      <div class="input-form">
           <label for="nombre">Monto:</label>
-          <input type="text" id="transfer-amount" placeholder="Ingresa el monto">
+          <input type="text" class="transfer-amount" placeholder="Ingresa el monto">
       </div>
 
-      <div>
-        <button type="submit" onclick="transferir()">Realizar transferencia</button>
+      <div class="acc-btn">
+        <button type="submit" onclick="transferir()" id="trf-btn">Realizar transferencia</button>
       </div>
 
     </section>
 
-    <section id="transfer">
+    <section id="main-container">
 
-      <h3>Pago</h3>
+      <h3 class="box-title">Pago</h3>
 
-      <div id="destiny-form">
+      <div class="input-form">
           <label for="nombre">Destinatario:</label>
-          <input type="text" id="transfer-destiny" placeholder="Ingresa CBU o Alias">
+          <input type="text" id="pay-destiny" placeholder="Ingresa el numero de la factura">
       </div>
       
-      <div id="amount-form">
+      <div class="input-form">
           <label for="nombre">Monto:</label>
-          <input type="text" id="transfer-amount" placeholder="Ingresa el monto">
+          <input type="text" class="transfer-amount" placeholder="Ingresa el monto">
       </div>
 
-      <div>
-        <button type="submit" onclick="transferir()">Realizar pago</button>
+      <div class="acc-btn">
+        <button type="submit" onclick="transferir()" id="pay-btn">Realizar pago</button>
       </div>
+
+      <div id="msj-container"></div>
 
     </section>
     

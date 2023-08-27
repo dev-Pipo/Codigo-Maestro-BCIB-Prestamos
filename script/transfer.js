@@ -1,17 +1,27 @@
-function()    
-    let saldo = 23423;
-    let saldoActual = document.getElementById('Saldo')
-    saldoActual.textContent = `$${234234}`
 
-function transferir(){    
-    let saldo = parse(document.getElementById("saldo"));    
-    let resto = document.getElementByClass("transfer-amount").value;
-    /let destino = document.getElementById("transfer-destiny");/
-
-    saldo = saldo - resto;
-    saldo.textContent = saldo;
+let saldoActual = document.querySelector(".saldoActual");
+let mostrame = document.querySelector(".mostrame");
+let transferencia = document.querySelector(".trasferencia")
+var montoDeSaldoBancario = 100000; // saldo de prueba
+let pagarServicios = document.querySelector(".pagar")
 
 
-    
+saldoActual.textContent= `$${montoDeSaldoBancario}`
 
-}
+transferencia.addEventListener("click",()=>{ 
+    let validar = confirm("seguro que quieres realizar esta trasferencia")
+    if(validar == true){ 
+    let restoBancario = document.querySelector(".transfer-amount").value;
+    montoDeSaldoBancario -= restoBancario;
+    saldoActual.textContent=`$${montoDeSaldoBancario}`;}
+    else alert("Su operacion a sido cancelada")}
+    )
+
+pagarServicios.addEventListener("click",()=>{ 
+     let validar = confirm("seguro que quieres realizar esta trasferencia")
+    if(validar == true){ 
+    let restoBancario = document.querySelector(".transfer-amount").value;
+    montoDeSaldoBancario -= restoBancario;
+    saldoActual.textContent=`$${montoDeSaldoBancario}`;}
+    else alert("Su operacion a sido cancelada")}
+    )

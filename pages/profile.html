@@ -75,16 +75,18 @@
       <div class="dates">
         <div class="datesUser">
           <p class="pDatos">Saldo</p>
-          <h2 id="saldo">********</h2><br>
+          <h2 class="saldoActual"></h2><br>
+         
           <p class="pDatos">Name:</p>
           <h2 class="h2Datos">PEDRO</h2>
         </div>
-        <button id="prueba" onclick="">
-          Mostrar saldo
-        </button>
+      
       </div>
+
     </div>
 
+    <!-- <button class="mostrame"> mostrar saldo</button> -->
+    
     <div class="container-converter">
       <section id="background">
         <input type="number" id="pesos" placeholder="Cantidad en pesos">
@@ -102,6 +104,51 @@
     </div>
 
   </main>
+
+<div class="transfer--container">
+  <section class="main-container">
+
+    <h3 class="box-title">Transferencia</h3>
+
+    <div class="input-form">
+        <label for="nombre">Destinatario:</label>
+        <input type="text" id="transfer-destiny" placeholder="Ingresa CBU o Alias">
+    </div>
+    
+    <div class="input-form">
+        <label for="nombre">Monto:</label>
+        <input type="number" class="transfer-amount" placeholder="Ingresa el monto">
+    </div>
+
+    <div class="acc-btn">
+      <button class="trasferencia">Realizar transferencia</button>
+    </div>
+
+  </section>
+
+  <section class="main-container">
+
+    <h3 class="box-title">Pago</h3>
+
+    <div class="input-form">
+        <label for="nombre">Destinatario:</label>
+        <input type="text" id="pay-destiny" placeholder="Ingresa el numero de la factura">
+    </div>
+    
+    <div class="input-form">
+        <label for="nombre">Monto:</label>
+        <input type="number" class="transfer-amount" placeholder="Ingresa el monto">
+    </div>
+
+    <div class="acc-btn">
+      <button type="submit" class="pagar" id="pay-btn">Realizar pago</button>
+    </div>
+
+    <div id="msj-container"></div>
+
+  </section>
+  
+</div>
 
   <footer>
     <div class="container-footer">

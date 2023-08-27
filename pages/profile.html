@@ -85,27 +85,7 @@
     </div>
 
     <!-- <button class="mostrame"> mostrar saldo</button> -->
-    
-    <div class="container-converter">
-      <section id="background">
-        <label for="pesos">Ingresa el monto en pesos:</label>
-        <input type="number" id="pesos" placeholder="Cantidad en pesos">
-        <section id="ops">
-          <select id="moneda">
-            <option value="dolar">Dólar</option>
-            <option value="euro">Euro</option>
-            <option value="real">Real</option>
-          </select>
-          <button onclick="convertirMoneda()" id="btn">Convertir</button>
-        </section>
-        <label for="resultado">El cambio final es de:</label>
-        <textarea placeholder="$$$" id="resultado" rows="1" cols="20" rea></textarea>
-      </section>
-    </div>
-
-  </main>
-
-<div class="transfer--container">
+    <div class="transfer--container">
   <section class="main-container">
 
     <h3 class="box-title">Transferencia</h3>
@@ -121,7 +101,7 @@
     </div>
 
     <div class="acc-btn">
-      <button class="trasferencia">Realizar transferencia</button>
+      <button class="trasferencia" id="trf-btn">Realizar transferencia</button>
     </div>
 
   </section>
@@ -147,7 +127,7 @@
     <div id="msj-container"></div>
 
   </section>
-  
+</main>
 </div>
 
   <footer>

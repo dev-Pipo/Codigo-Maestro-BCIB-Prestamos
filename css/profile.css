@@ -1,9 +1,22 @@
+:root{
+    --negro: #00100B;
+    --rojo:  #C42021;
+    --gris:  #7C8483;
+    --blanco:#F0F3F5;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Open Sans', sans-serif;
+}
 
 main{
     height: 110vh;
 }
 .userName {
     display: flex;
+}
+
+.buttonMenu{
+    float: right;
 }
 
 .h1UserProfile {
@@ -20,6 +33,7 @@ main{
 
 .container-creditCard{
     display: grid;
+    justify-content: center;
 }
 
 .credit-card {
@@ -32,6 +46,7 @@ main{
     padding-right: 20px;
 }
 .imgCreditCard {
+    margin-top: -12px;
     width: 100%;
     cursor: pointer;
     border-radius: 14px;
@@ -60,7 +75,7 @@ main{
     padding: 30px 10px;
     font-weight: bold;
     font-size: 30px;
-    color: darkblue;
+    color: var(--negro);
 }
 
 .h2Datos{
@@ -81,6 +96,7 @@ main{
     border-radius: 14px;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
     background-color: #7C8483;
 }
@@ -93,6 +109,7 @@ main{
 
 #pesos{
     width:fit-content;
+    margin-top: -10px;
 }
 
 #ops{
@@ -101,7 +118,10 @@ main{
     gap: 35px;
 }
 
-#btn{
+#btn,#moneda{
+    border:none;
+    border-radius: 5px;
+    padding: 4px;
     width: fit-content;
     align-self: flex-end;
     cursor: pointer;
@@ -115,6 +135,3 @@ main{
     align-self: center;
     margin-top: -15px;
 }
-
-
-

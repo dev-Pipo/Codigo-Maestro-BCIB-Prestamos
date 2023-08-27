@@ -21,6 +21,10 @@ header{
     --text: 'Open Sans', sans-serif;
 }
 
+.buttonMenu{
+    float: right;
+}
+
 body{
     background-color: var(--blanco);
     font-family: var(--text);

@@ -71,6 +71,34 @@
     margin: 1em;
       }
 
-  
-  
+button{
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
 
+.buttonMenu{
+  float: right;
+}
+
+@media (max-width: 426px) {
+  main{
+      font-size: 12px;
+  }
+  button{
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+}
+
+@media (max-width: 769px) {
+  main{
+      font-size: 16.89px;
+  }
+  button{
+    padding: 8px;
+    border-radius: 15px;
+  }
+  
+}

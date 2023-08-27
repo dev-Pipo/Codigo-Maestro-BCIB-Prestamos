@@ -35,7 +35,7 @@ const movimientos = [
       `;
   
       const detallesButton = document.createElement('button');
-      detallesButton.innerText = 'Más Detalles';
+      detallesButton.innerHTML = '<p class="md">Más </br> Detalles</p>';
       detallesButton.addEventListener('click', () => mostrarDetalles(index));
   
       li.appendChild(detallesButton);

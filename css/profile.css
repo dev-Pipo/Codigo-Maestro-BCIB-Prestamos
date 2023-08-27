@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
 :root{
     --negro: #00100B;
     --rojo:  #C42021;
@@ -93,6 +93,10 @@ background-color: var(--negro);
     display: flex;
 }
 
+.buttonMenu{
+    float: right;
+}
+
 .h1UserProfile {
     text-align: center;
     padding: 40px;
@@ -108,6 +112,7 @@ background-color: var(--negro);
 
 .container-creditCard{
     display: grid;
+    justify-content: center;
 }
 
 .trasferencia{
@@ -123,6 +128,7 @@ background-color: var(--negro);
     padding-right: 20px;
 }
 .imgCreditCard {
+    margin-top: -12px;
     width: 100%;
     cursor: pointer;
     border-radius: 14px;
@@ -164,6 +170,7 @@ background-color: var(--negro);
     flex-wrap: wrap;
 }
 
+
 .container-converter{
     display: flex;
     width: 100%;
@@ -202,42 +209,7 @@ input::placeholder{
     background-color: #7C8483;
 }
 
-#moneda{
-    font-size: 15px;
-    width: fit-content;
-    align-content: center;
-}
 
-#pesos{
-    width:fit-content;
-}
-
-#ops{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-}
-
-#btn{
-    width: fit-content;
-    align-self: flex-end;
-    cursor: pointer;
-}
-
-.saldoActual{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-#resultado{
-    border-bottom: solid 1px black;
-    width: fit-content;
-    height: 20px;
-    resize: none;
-    align-self: center;
-    margin-top: -15px;
-}
 
 
 @media (max-width: 450px) {

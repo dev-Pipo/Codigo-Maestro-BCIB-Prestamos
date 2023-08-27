@@ -43,12 +43,30 @@ h1,h3{
 }
 
 #trf-btn,#pay-btn{
-    padding: 5px;
+    background-color: var(--rojo);
+    margin-right: 10px;
+    padding: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: solid 1.5px var(--negro);
     cursor: pointer;
+    font-size: 1rem;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+        
+    background-color: var(--rojo);
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 550;
 }
+#trf-btn:hover, #pay-btn:hover{
+background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
 
 .box-title{
     font-size: 30px;
@@ -69,7 +87,6 @@ h1,h3{
 #pay-destiny{
     width: 100%;
     height: 35px;
-    border-radius: 0px;
 }
 
 .userName {
@@ -87,7 +104,7 @@ h1,h3{
 
 .pName {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -98,12 +115,15 @@ h1,h3{
     justify-content: center;
 }
 
+.trasferencia{
+    margin: 10px;
+}
+
 .credit-card {
     border-radius: 14px;
     max-width: 300px;
     display: block;
     margin: auto;
-    padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -124,7 +144,7 @@ h1,h3{
     max-width: 600px;
     display: block;
     margin: auto;
-    margin-top: -180px;
+    margin-top: -195px;
     z-index: -999;
     position: relative;
 }
@@ -137,7 +157,7 @@ h1,h3{
     padding: 30px 10px;
     font-weight: bold;
     font-size: 30px;
-    color: darkblue;
+    color: var(--negro);
     font-size: 1.5rem;
 }
 
@@ -151,6 +171,45 @@ h1,h3{
 }
 
 
+.container-converter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-bottom: var(--rojo) 3px solid;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    transition: background-color 1s ease;
+    font-size: 15px;
+}
+
+input:focus{
+    background-color: var(--blanco);
+}
+
+input::placeholder{
+    color: var(--negro);
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+
+#background{
+    display: flex;
+    padding: 20px;
+    border-radius: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #7C8483;
+}
+
+
 
 
 @media (max-width: 450px) {
@@ -159,5 +218,10 @@ h1,h3{
     }
     .container-creditCard{
         width: 100%;
+    }
+    .container-footer{
+        flex-direction: column;
+        display: flex;
+        gap: 15px;
     }
 }

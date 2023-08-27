@@ -65,7 +65,7 @@
 
 .wraper header{
     width: 100%;
-    background-color: var(--rojo);
+    background-color: transparent;
     display: flex;
     align-content:flex-start ;
     flex-wrap: wrap;

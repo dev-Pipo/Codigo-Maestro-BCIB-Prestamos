@@ -10,8 +10,9 @@
     --text: 'Open Sans', sans-serif;
 }
 
+
 main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -25,9 +26,8 @@ h1,h3{
     flex-direction: column;
     background-color: var(--gris);
     width: 80%;
-    height: fit-content;
     padding: 30px 5px;
-    margin-top: -2%;
+    margin-top: 20px;
     border-radius: 30px;
     align-content: center;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@ h1,h3{
 .box-title{
     font-size: 30px;
     margin-bottom: 5px;
-    width: 100vh;
+    width: 100%;
 }
 
 .input-form{
@@ -84,7 +84,9 @@ h1,h3{
 .pName {
     text-align: center;
     font-size: 30px;
-    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .container-creditCard{
@@ -130,11 +132,16 @@ h1,h3{
     font-weight: bold;
     font-size: 30px;
     color: darkblue;
+    font-size: 1.5rem;
 }
 
 .h2Datos{
     padding: 20px 0px;
     font-size: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .container-converter{
@@ -176,6 +183,12 @@ h1,h3{
     cursor: pointer;
 }
 
+.saldoActual{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 #resultado{
     border-bottom: solid 1px black;
     width: fit-content;
@@ -186,4 +199,11 @@ h1,h3{
 }
 
 
-
+@media (max-width: 450px) {
+    h1{
+        font-size: 30px;
+    }
+    .container-creditCard{
+        width: 100%;
+    }
+}

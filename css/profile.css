@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
 :root{
     --negro: #00100B;
     --rojo:  #C42021;
@@ -9,8 +11,67 @@
 }
 
 main{
-    height: 110vh;
+    height: 100vh;
+
 }
+
+h1,h3{
+    font-family: var(--title);
+    font-size: 45px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    width: 80%;
+    height: fit-content;
+    padding: 30px 5px;
+    margin-top: -2%;
+    border-radius: 30px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.transfer--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin:25px 0 20px 0;
+    flex-direction: column;
+}
+
+#trf-btn,#pay-btn{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1.5px var(--negro);
+    cursor: pointer;
+}
+
+.box-title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    width: 100vh;
+}
+
+.input-form{
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.acc-btn{
+    align-self: flex-end;
+}
+
+.transfer-amount,#transfer-destiny,
+#pay-destiny{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+}
+
 .userName {
     display: flex;
 }
@@ -27,7 +88,6 @@ main{
 .pName {
     text-align: center;
     font-size: 30px;
-    font-style: italic;
     padding-top: 40px;
 }
 

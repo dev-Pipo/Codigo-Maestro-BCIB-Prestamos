@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
-
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Condensed', sans-serif; */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +11,7 @@ body {
     height: 100%;
 }
 
-main{
+main {
     padding-top: 8px;
 }
 
@@ -25,24 +20,23 @@ footer {
     border-top: gray 0.1px solid;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* GRID CSS */
 .grid-container {
     display: grid;
 }
-
 .grid-item {
     text-align: center;
 }
-
 .menuHamburger {
-    gap: 0px;
     padding: 5px;
     justify-content: space-between;
-    grid-template-columns: 80px 0px 280px;
+    grid-template-columns: 80px auto 280px;
     box-shadow: 0px 0px 5px gray;
 }
-
 .carousel-grid,
 .footer-grid {
     grid-column: 1 / span 3;
@@ -356,15 +350,6 @@ footer {
     }
 }
 
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
 /* CARTAS PROMOCIONES/ETC */
 .container-card {
     display: grid;
@@ -389,7 +374,6 @@ footer {
     transition: all 0.5s;
     display: grid;
     align-items: center;
-
     user-select: none;
     font-weight: bolder;
     color: black;
@@ -414,150 +398,11 @@ footer {
 }
 
 
-/* PAGINA NOSOTROS */
-.blockNosotros {
-    width: 100%;
-}
-.imgNosotros {
-    width: 100%;
-    height: auto;
-}
-.pNosotros {
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    height: 1em;
-    padding: 10px 60px;
-    padding-bottom: 10rem;
-    box-sizing: content-box;
-
-}
-.h3Unite {
-    color: red;
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    text-align: center;
-    box-sizing: content-box;
-}
-
-/* Botón OP-EMPLEO */
-.btnEmpleo{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-.btnOPEMPLEO {
-    background-color: red;
-    color: white;
-    align-items: center;
-    border-radius: 24px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
-    box-sizing: border-box;
-    fill: currentcolor;
-    justify-content: center;
-    letter-spacing: .25px;
-    line-height: normal;
-    max-width: 100%;
-    overflow: visible;
-    padding: 2px 30px;
-    margin: 2em;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: auto;
-    will-change: transform, opacity;
-    z-index: 0;
-
-
-}
-.btnOPEMPLEO:hover {
-    background: gray;
-    color: black;
-}
-
-
-/* ESTILO BOX INICIO SESION */
-.contenedor1{
-    height:100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenido-formulario{
-    padding-top: 13%;
-}
-
-.formulario{
-    color: black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    border-radius: 10%;
-    height: 350px;
-    width: 400px;
-    box-shadow: 0 5px 10px rgba(224,62,62, 0.4);
-}
-
-form .title{
-    font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    padding-top: 5%;
-}
-
-form label .fa-solid{
-    color:#E03E3E;
-    font-size: 20px;
-    margin-right: 10px;
-    margin-bottom: 10%;
-}
-
-form label input{
-    outline: none;
-    border: none;
-    color: #252525;
-    font-size: 18px;
-    border-bottom: solid 2px #E03E3E;
-}
-
-form label input::placeholder{
-    color: #E03E3E;
-}
-
-#button-login1{
-    color: #fff;
-    border: none;
-    background: #E03E3E;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-form .link{
-    color: #E03E3E;
-
-}
-
-
-
-
-
-
 /* FOOTER ESTILO */
 .container-footer {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 20px;
-    justify-content: space-between;
-    
 }
 
 .footer-condiciones {
@@ -584,4 +429,115 @@ form .link{
     padding: 10px;
     cursor: pointer;
     width: 60px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 426px) {
+    .menuHamburger{
+        display: flex;
+    }
+    .menuGrid{
+        margin: 0 10px;
+        
+    }
+    .buttonMenu{
+        display: inline-block;
+        padding: 0;
+        
+    }
+    .btnInicioSesion, .btnRegistrarse{
+        display: flex;
+        margin: 2px;
+        padding: 0;
+        width: 100px;
+        text-decoration: none;
+    }
+    .imgLogo {
+        padding-top: 10px;
+        width: 100px;
+    }
+    .next,
+    .prev {
+        position: absolute;
+        top: 55%;
+        width: auto;
+        padding: 10px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+    .next {
+        right: 0px;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev {
+        left: 0px;
+        border-radius: 0 3px 3px 0;
+    }
+    .container-card {
+        display: inline-block;
+        margin: 0 52px;
+    }
+    .card {
+        margin: 15px ;
+        width: 250px;
+        height: 280px;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.5s;
+        align-items: center;
+        user-select: none;
+    }
+    .container-footer {
+        display: inline;
+    }
+    .footer-condiciones{
+        text-align: center;
+        padding: 0px;
+        margin: 15px;
+    }
+}
+
+/* TABLET RESPONSIVE */
+@media (max-width: 769px) {
+    .next,
+    .prev {
+        position: absolute;
+        top: 55%;
+        width: auto;
+        padding: 10px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+    .next {
+        right: 0px;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev {
+        left: 0px;
+        border-radius: 0 3px 3px 0;
+    }
+    .container-card {
+        grid-template-columns: auto auto;
+        column-gap: 0px;
+        row-gap: 0px;
+        padding: 20px;
+    }
+    .card {
+        margin: 15px;
+        width: 250px;
+        height: 280px;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.5s;
+        align-items: center;
+        user-select: none;
+    }
 }

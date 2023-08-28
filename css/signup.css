@@ -61,6 +61,11 @@ form label input::placeholder {
     color: #E03E3E;
 }
 
+a{
+    text-decoration: none;
+    color: var(--blanco)
+}
+
 #button-login1 {
     color: #fff;
     border: none;

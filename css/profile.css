@@ -112,7 +112,7 @@ background-color: var(--negro);
 
 .container-creditCard{
     display: grid;
-    justify-content: center;
+ 
 }
 
 .trasferencia{
@@ -171,12 +171,6 @@ background-color: var(--negro);
 }
 
 
-.container-converter{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-}
 
 input{
     border: none;
@@ -209,7 +203,11 @@ input::placeholder{
     background-color: #7C8483;
 }
 
-
+.saldoActual{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
 
 
 @media (max-width: 450px) {
@@ -223,5 +221,13 @@ input::placeholder{
         flex-direction: column;
         display: flex;
         gap: 15px;
+    }
+
+    .datesUser p{
+        font-size: 19px;
+    }
+
+    .datesUser h2{
+        font-size: 19px;
     }
 }

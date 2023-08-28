@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" href="../images/favicon/favicon.ico">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profile.css">
+
+
+  <title>BCIB Argentina - Codigo Maestro</title>
+  <meta name="description" content="Banco Nacional ItBa de Argentina, menu inicial">
+  <meta name="keywords" content="BANCO, NACIONAL, ITBA, ARGENTINA">
+</head>
+
+<body>
+  <header>
+    <div class="grid-container menuHamburger">
+      <div class="menuGrid">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <button class="btnMenu"><a href="../index.html">Inicio</a></button>
+
+              <button class="accordion">Cuenta</button>
+              <div class="panel">
+                <li><a href="./profile.html">Perfil</a></li>
+                <li><a href="./movement.html">Actividad</a></li>
+                <li><a href="./transference.html">Cotización</a></li>
+                <li><a href="./lending.html">Préstamos</a></li>
+              </div>
+              <button class="btnMenu"><a href="./aboutus.html">Nosotros</a></button>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="menuGrid">
+        <a href="../index.html"><img class="imgLogo" src="../images/logo/logo-1.png" alt="logo de banco BCIB"></a>
+      </div>
+      <div class="menuGrid">
+        <div class="buttonMenu">
+          <a href="../index.html"><button class="btnRegistrarse">Cerrar <br> sesión</button></a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="userName">
+
+      <h1 class="h1UserProfile">Bienvenido, Maxi! </h1>
+    </div>
+    
+    <div class="container-creditCard">
+      <div class="credit-card">
+        <img class="imgCreditCard" src="../images/credit-card/credit-card-visa.png" alt="Tu tarjeta de credito">
+      </div>
+
+      <div class="dates">
+        <div class="datesUser">
+          <p class="pDatos">Saldo:</p>
+          <h2 class="saldoActual"></h2><br>
+         
+          <p class="pDatos">Name :</p>
+          <h2 class="h2Datos">Maxi</h2>
+        </div>
+      
+      </div>
+
+    </div>
+
+    
+    
+<div class="transfer--container">
+  <section class="main-container">
+
+    <h3 class="box-title">Transferencia</h3>
+
+    <div class="input-form">
+        <label for="nombre">Destinatario:</label>
+        <input type="text" id="transfer-destiny" placeholder="Ingresa CBU o Alias">
+    </div>
+    
+    <div class="input-form">
+        <label for="nombre">Monto:</label>
+        <input type="number" class="transfer-amount" placeholder="Ingresa el monto">
+    </div>
+
+    <div class="acc-btn">
+      <button class="trasferencia" id="trf-btn">Realizar transferencia</button>
+    </div>
+
+  </section>
+
+  <section class="main-container">
+
+    <h3 class="box-title">Pago</h3>
+
+    <div class="input-form">
+        <label for="nombre">Destinatario:</label>
+        <input type="text" id="pay-destiny" placeholder="Ingresa el numero de la factura">
+    </div>
+    
+    <div class="input-form">
+        <label for="nombre">Monto:</label>
+        <input type="number" class="transfer-amount pay-amount" placeholder="Ingresa el monto">
+    </div>
+
+    <div class="acc-btn">
+      <button type="submit" class="pagar" id="pay-btn">Realizar pago</button>
+    </div>
+
+    <div id="msj-container"></div>
+
+  </section>
+</main>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="footer-condiciones">
+        <a href="#">
+          <p>Politica y Privacidad</p>
+        </a>
+        <a href="#">
+          <p>Terminos y Condiciones</p>
+        </a>
+        <a href="#">
+          <p>Atencion al Cliente</p>
+        </a>
+        <p>Contacto: <br> <a href="#">bancocapitalitba2023@hotmail.com</a></p>
+      </div>
+      <div class="footer-logo">
+        <img class="imgLogo" src="../images/logo/logo-1.png" alt="Logo Banco Nacional ITBA">
+        <p>© 2023 Banco Capital ITBA <br> Todos los derechos Reservados.</p>
+      </div>
+      <div class="footer-redes-app">
+        <div class="redes">
+          <img class="img-redes" src="../images/redes-app/instagram.png" alt="logo instagram">
+          <img class="img-redes" src="../images/redes-app/facebook.png" alt="logo facebook">
+          <img class="img-redes" src="../images/redes-app/twitter.png" alt="logo twitter">
+        </div>
+        <div class="apps">
+          <img class="img-apps" src="../images/redes-app/google-play.png" alt="logo google playstore">
+          <img class="img-apps" src="../images/redes-app/apple-store.png" alt="logo apple store">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../script/transfer.js" type="text/javascript"></script>
+  <script src="../script/main.js" type="text/javascript"></script>
+  <script src="../script/convertermoney.js" type="text/javascript"></script>
+</body>
+
+</html>

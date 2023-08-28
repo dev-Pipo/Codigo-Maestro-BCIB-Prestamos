@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
+
+:root{
+    --negro: #00100B;
+    --rojo:  #C42021;
+    --gris:  #7C8483;
+    --blanco:#F0F3F5;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Open Sans', sans-serif;
+}
+.main--prestmos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonMenu{
+    float: right;
+}
+
+.input-item label{
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+}
+
+.amount{
+    margin-bottom: 25px;
+}
+
+.input-item div input{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    border-bottom: 3px solid var(--rojo);
+    font-size: 1.5rem;
+}
+
+.wraper{
+    display: flex;
+    align-content: center ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.calcular{
+    padding: 10px 25px;
+    border-radius: 7px;
+    background-color: var(--rojo);
+    border: 2px solid var(--negro);
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    width: max-content;
+    font-weight:650;
+}
+
+.calcular:hover{
+    background-color: #B32011 ;
+    cursor: pointer;
+}
+
+
+.wraper header{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-content:flex-start ;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 50px 0 50px 0;
+    font-family: var(--title);
+}
+
+.wraper header h1{
+    margin: 0 0 0 30px;
+    padding: 20px;
+}
+
+.wraper .input-item, .results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.result--container{
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.results p{
+    color: var(--negro);
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--text);
+   
+}
+
+.valueTaxes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.taxTable{
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--rojo);
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.taxTable td{
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--text);
+    padding-top: 10px;
+}
+
+@media (max-width:400px) {
+    .tableTitle td{
+        font-size: 1.2rem;
+    }
+    .tableTitle :nth-child(2){
+        font-size: 1.2rem;
+        padding-left: 20px;
+    }
+}

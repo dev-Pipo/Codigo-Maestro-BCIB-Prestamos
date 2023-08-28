@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
+
+:root{
+    --negro: #00100B;
+    --rojo:  #C42021;
+    --gris:  #7C8483;
+    --blanco:#F0F3F5;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body{
+  font-family: var(--text);
+}
+
+h1{
+  font-family: var(--title);
+}
+
+/*  BOX CONTENT */
+
+.allmovement {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#movement {
+    display: flex;
+    width: auto;
+    min-width: 400px;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+#Actividad {
+    color: var(--blanco);
+}
+
+.container {
+    background-color: var(--gris);
+    border-radius: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.8em;
+    text-align: center;
+  }
+
+  /*  BOX CONTENT - JS. FUNCION MOVIMIENTOS*/
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  li {
+    padding: 0.7em 0;
+    border-bottom: 1px dashed var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    
+  /*  BOTÓN VER MÁS */
+
+  #bttnvermas {
+    border-radius: 0.6em;
+    padding: 0.4em;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-color: var(--gris);
+    margin: 1em;
+      }
+
+button{
+  padding: 8px;
+  border-radius: 20px;
+  border: none; 
+}
+
+.buttonMenu{
+  float: right;
+}
+
+@media (max-width: 426px) {
+  main{
+      font-size: 12px;
+  }
+  button{
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+}
+
+@media (max-width: 769px) {
+  main{
+      font-size: 16.89px;
+  }
+  button{
+    padding: 8px;
+    border-radius: 15px;
+  }
+
+}
+
+button:hover{
+  background-color: var(--negro);
+  color: var(--blanco);
+  cursor: pointer;
+}

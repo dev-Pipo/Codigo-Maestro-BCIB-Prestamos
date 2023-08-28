@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Poppins&family=Roboto+Condensed&display=swap');
+:root{
+    --negro: #00100B;
+    --rojo:  #C42021;
+    --gris:  #7C8483;
+    --blanco:#F0F3F5;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Open Sans', sans-serif;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+h1,h3{
+    font-family: var(--title);
+    font-size: 45px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    width: 80%;
+    padding: 30px 5px;
+    margin-top: 20px;
+    border-radius: 30px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.transfer--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin:25px 0 20px 0;
+    flex-direction: column;
+}
+
+#trf-btn,#pay-btn{
+    background-color: var(--rojo);
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 1.5px var(--negro);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+        
+    background-color: var(--rojo);
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 550;
+}
+#trf-btn:hover, #pay-btn:hover{
+background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
+
+.box-title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input-form{
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+.acc-btn{
+    align-self: flex-end;
+}
+
+.transfer-amount,#transfer-destiny,
+#pay-destiny{
+    width: 100%;
+    height: 35px;
+}
+
+.userName {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.buttonMenu{
+    float: right;
+}
+
+.h1UserProfile {
+    text-align: center;
+    padding: 40px;
+}
+
+.pName {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-creditCard{
+    display: grid;
+ 
+}
+
+.trasferencia{
+    margin: 10px;
+}
+
+.credit-card {
+    border-radius: 14px;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.imgCreditCard {
+    margin-top: -12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 2px 10px 40px black;
+}
+
+
+.dates {
+    background: #7C8483;
+    border-radius:150px;
+    padding: 5%;
+    padding-top: 200px;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: -195px;
+    z-index: -999;
+    position: relative;
+}
+
+.datesUser{
+    display: flex;
+}
+
+.pDatos{
+    padding: 30px 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--negro);
+    font-size: 1.5rem;
+}
+
+.h2Datos{
+    padding: 20px 0px;
+    font-size: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+input{
+    border: none;
+    outline: none;
+    border-bottom: var(--rojo) 3px solid;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    transition: background-color 1s ease;
+    font-size: 15px;
+}
+
+input:focus{
+    background-color: var(--blanco);
+}
+
+input::placeholder{
+    color: var(--negro);
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+
+#background{
+    display: flex;
+    padding: 20px;
+    border-radius: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #7C8483;
+}
+
+.saldoActual{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 30px;
+    }
+    .container-creditCard{
+        width: 100%;
+    }
+    .container-footer{
+        flex-direction: column;
+        display: flex;
+        gap: 15px;
+    }
+
+    .datesUser p{
+        font-size: 19px;
+    }
+
+    .datesUser h2{
+        font-size: 19px;
+    }
+}

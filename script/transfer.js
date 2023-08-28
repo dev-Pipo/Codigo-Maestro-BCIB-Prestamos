@@ -13,7 +13,8 @@ transferencia.addEventListener("click",()=>{
     if(validar == true){ 
     let restoBancario = document.querySelector(".transfer-amount").value;
     montoDeSaldoBancario -= restoBancario;
-    saldoActual.textContent=`$${montoDeSaldoBancario}`;}
+    saldoActual.textContent=`$${montoDeSaldoBancario}`;
+    alert("su operacion a sido realizada con exito")}
     else alert("Su operacion a sido cancelada")}
     )
 
@@ -22,6 +23,7 @@ pagarServicios.addEventListener("click",()=>{
     if(validar == true){ 
     let restoBancario = document.querySelector(".transfer-amount").value;
     montoDeSaldoBancario -= restoBancario;
-    saldoActual.textContent=`$${montoDeSaldoBancario}`;}
+    saldoActual.textContent=`$${montoDeSaldoBancario}`;
+    alert("su operacion a sido realizada con exito")}
     else alert("Su operacion a sido cancelada")}
     )

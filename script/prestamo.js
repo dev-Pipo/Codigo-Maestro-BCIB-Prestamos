@@ -1,3 +1,5 @@
+const verificacion = document.querySelector(".verificacion")
+
 // calculo de intereses
 
 const cacl = document.querySelector(".calcular")
@@ -20,9 +22,10 @@ function calcularTotal(a, b) {
 } 
 
 function calcularCuota(a, b) {
-   console.log(a/b)
     return a/b
 }
+
+
 
 cacl.addEventListener("click",()=>{
     const monto = document.querySelector(".amount").value;
@@ -31,12 +34,24 @@ cacl.addEventListener("click",()=>{
     const amountResult = document.querySelector(".amount-result")
     const monthTax = document.querySelector(".month-tax")
 
+    if(monto == "" && meses == "") return
+    else{
     let taxResult = calcularPorcentaje(meses, monto); 
     let final = calcularTotal(monto, taxResult);
     let taxMounth = calcularCuota(final, meses)
 
     amountResult.textContent = `Monto a devolver: $${final}`
     tax.textContent =`intereses: $${taxResult}`;
-    monthTax.textContent =`Cuota mensual: $${taxMounth}`;
+    monthTax.textContent =`Cuota mensual: $${taxMounth}`;}
 }
 )
+
+verificacion.addEventListener("click", ()=>{
+    const monto = document.querySelector(".amount").value;
+    if(monto == "") return
+    else{
+    let confirmar = confirm("Estas seguro de realizar esta operacion");
+    
+    if(confirmar == true) alert("Operacion a sido realizada con exito, los fondos seran sumados a tu cuenta en los proximos dias")
+    else alert("Operacion cancelada")}
+})

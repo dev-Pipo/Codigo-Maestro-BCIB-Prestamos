@@ -5,22 +5,7 @@ const movimientos = [
     { fecha: '2023-08-24', descripcion: 'Transferencia', monto: 780.00 },
     { fecha: '2023-08-23', descripcion: 'Retiro en cajero', monto: -3000.00 }
    
-  ]
-  
- // Función - Mostrar Detalles //
-  function mostrarDetalles(index) {
-    const movimiento = movimientos[index];
-    const detallesDiv = document.createElement('div');
-    detallesDiv.className = 'detalles';
-    detallesDiv.innerHTML = `
-      <p><strong>Fecha:</strong> ${movimiento.fecha}</p>
-      <p><strong>Descripción:</strong> ${movimiento.descripcion}</p>
-      <p><strong>Monto:</strong> ${movimiento.monto > 0 ? '+' : '-'}$${Math.abs(movimiento.monto).toFixed(2)}</p>
-    `;
-  
-    const listItem = document.querySelectorAll('li')[index];
-    listItem.appendChild(detallesDiv);
-  }
+  ]  
   
   // Función para cargar los movimientos en la página //
   function cargarMovimientos() {

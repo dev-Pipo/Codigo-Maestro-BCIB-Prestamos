@@ -34,13 +34,15 @@ cacl.addEventListener("click",()=>{
     const amountResult = document.querySelector(".amount-result")
     const monthTax = document.querySelector(".month-tax")
 
+    if(monto == "" && meses == "") return
+    else{
     let taxResult = calcularPorcentaje(meses, monto); 
     let final = calcularTotal(monto, taxResult);
     let taxMounth = calcularCuota(final, meses)
 
     amountResult.textContent = `Monto a devolver: $${final}`
     tax.textContent =`intereses: $${taxResult}`;
-    monthTax.textContent =`Cuota mensual: $${taxMounth}`;
+    monthTax.textContent =`Cuota mensual: $${taxMounth}`;}
 }
 )
 

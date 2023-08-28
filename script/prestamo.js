@@ -22,7 +22,6 @@ function calcularTotal(a, b) {
 } 
 
 function calcularCuota(a, b) {
-   console.log(a/b)
     return a/b
 }
 
